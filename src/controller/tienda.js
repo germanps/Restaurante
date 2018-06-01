@@ -2,23 +2,23 @@ import { extendObservable } from 'mobx';
 
 class Tienda {
    constructor(){
-      estendObservable(this,
+      extendObservable(this,
          {
             platos: [
                {
-                  nombre: 'nombrePlato',
+                  nombre: 'nombrePlato1',
                   descripcion: 'descripcion del plato',
                   precio: 20,
                   cantidad: 0
                },
                {
-                  nombre: 'nombrePlato',
+                  nombre: 'nombrePlato2',
                   descripcion: 'descripcion del plato',
                   precio: 20,
                   cantidad: 0
                },
                {
-                  nombre: 'nombrePlato',
+                  nombre: 'nombrePlato3',
                   descripcion: 'descripcion del plato',
                   precio: 20,
                   cantidad: 0
@@ -29,6 +29,6 @@ class Tienda {
    }
 }
 
-var VarTienda = new Tienda;
+var VarTienda = new Tienda();
 
 export default VarTienda;

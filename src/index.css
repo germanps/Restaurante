@@ -4,3 +4,8 @@ body {
   font-family: 'Questrial', sans-serif;
   font-size: 14px;
 }
+.header img{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}

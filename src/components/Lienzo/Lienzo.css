@@ -1,0 +1,12 @@
+.rest-jumbotron{
+   background: url('./../../content/img/jumbotron.png') center center no-repeat;
+   background-size: cover;
+   height: 350px;
+   display: flex;
+}
+.rest-jumbotron h2{
+   color: #fff;
+   margin: auto;
+   font-size: 5rem;
+   text-shadow: 2px 2px 5px #000;
+}
