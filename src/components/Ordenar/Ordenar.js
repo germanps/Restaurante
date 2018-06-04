@@ -3,7 +3,7 @@ import './Ordenar.css';
 
 class Ordenar extends Component{
     actualizarCantidad(e){
-        console.log(e.target.value);
+        this.props.hacerPedido(this.props.indice, event.target.value);
     }
     render(){
         return(

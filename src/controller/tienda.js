@@ -27,6 +27,16 @@ class Tienda {
          }
       );
    }
+
+   //Modificador de las cantidades 
+   ponerEnLaOrden(indicePlato, cantidadPlato){
+        this.platos.forEach((el, index) => {
+            if(indicePlato === index){
+                //Si coinciden los indices actualizamos la cantidad
+                this.plato[index].cantidad = cantidadPlato;
+            }
+        });
+   }
 }
 
 var VarTienda = new Tienda();
