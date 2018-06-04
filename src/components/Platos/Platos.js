@@ -12,14 +12,15 @@ class Platos extends Component {
                     <img className="plato-img" role="presentation" src={logo} />  
                     <div className="plato-contenido">
                         <h4 className="plato-title">{plato.nombre}</h4>
-                        <p>{plato.descripcion}</p>
+                        <p className="plato-descripcion">{plato.descripcion}</p>
+                        <div>Componente Ordenar.js</div>
                     </div>
                 </div>
             );
         });
         return(
-            <div className="platos col-md-6">
-                <div className="panel">
+            <div className="platos-container col-md-6">
+                <div className="platos-wrapper">
                     <div className="list-group plato-menu">
                         {platos}
                     </div>
