@@ -3,6 +3,7 @@
    background-size: cover;
    height: 350px;
    display: flex;
+   margin-bottom: 2rem;
 }
 .rest-jumbotron h2{
    color: #fff;

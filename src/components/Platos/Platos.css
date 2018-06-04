@@ -36,3 +36,14 @@
 .ListMargin{
 	margin-left: 20px;
 } */
+.plato-menu{
+	display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+}
+.plato-img{
+	width: 80px;
+	height: auto;
+	float: left;
+}

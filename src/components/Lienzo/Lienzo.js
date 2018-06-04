@@ -12,7 +12,7 @@ class Lienzo extends Component{
             <div className="rest-jumbotron">
                <h2>Restaurant</h2>
             </div>
-            <div>
+            <div className="contenido-restaurante clearfix">
                <Platos />
                <p>Pedidos</p>
             </div>
