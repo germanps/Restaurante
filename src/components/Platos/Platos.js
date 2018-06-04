@@ -14,7 +14,7 @@ class Platos extends Component {
                     <div className="plato-contenido">
                         <h4 className="plato-title">{plato.nombre}</h4>
                         <p className="plato-descripcion">{plato.descripcion}</p>
-                        <Ordenar />
+                        <Ordenar precio={plato.precio}/>
                     </div>
                 </div>
             );

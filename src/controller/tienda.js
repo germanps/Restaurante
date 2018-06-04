@@ -8,19 +8,19 @@ class Tienda {
                {
                   nombre: 'nombrePlato1',
                   descripcion: 'descripcion del plato',
-                  precio: 20,
+                  precio: 120,
                   cantidad: 0
                },
                {
                   nombre: 'nombrePlato2',
                   descripcion: 'descripcion del plato',
-                  precio: 20,
+                  precio: 220,
                   cantidad: 0
                },
                {
                   nombre: 'nombrePlato3',
                   descripcion: 'descripcion del plato',
-                  precio: 20,
+                  precio: 320,
                   cantidad: 0
                }
             ]

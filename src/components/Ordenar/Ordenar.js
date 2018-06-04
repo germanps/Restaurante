@@ -10,7 +10,7 @@ class Ordenar extends Component{
                     <input type="number" min='0' max='20' placeholder="0"/>
                 </div>
                 
-                <label className="ordenar-inputs-precio"> Precio: </label>
+                <label className="ordenar-inputs-precio"> Precio: {this.props.precio}</label>
             </div>
         )
     }
