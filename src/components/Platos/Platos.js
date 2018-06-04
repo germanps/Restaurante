@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Platos.css';
 import logo from './../../logo.svg';
 import VarTienda from './../../controller/Tienda';
+import Ordenar from './../Ordenar/Ordenar';
 
 class Platos extends Component {
     render(){
@@ -13,7 +14,7 @@ class Platos extends Component {
                     <div className="plato-contenido">
                         <h4 className="plato-title">{plato.nombre}</h4>
                         <p className="plato-descripcion">{plato.descripcion}</p>
-                        <div>Componente Ordenar.js</div>
+                        <Ordenar />
                     </div>
                 </div>
             );
@@ -22,6 +23,7 @@ class Platos extends Component {
             <div className="platos-container col-md-6">
                 <div className="platos-wrapper">
                     <div className="list-group plato-menu">
+                        <h3>Platos</h3>
                         {platos}
                     </div>
                 </div>

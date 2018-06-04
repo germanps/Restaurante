@@ -14,7 +14,7 @@ class Lienzo extends Component{
             </div>
             <div className="contenido-restaurante clearfix">
                <Platos />
-               <p>Pedidos</p>
+               <h3>Pedidos</h3>
             </div>
          </div>
       )
