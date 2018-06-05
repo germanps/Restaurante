@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Platos from './../Platos/Platos';
+import Bebidas from './../Bebidas/Bebidas';
 import Pedidos from './../Pedidos/Pedidos';
 import './Lienzo.css';
 
@@ -15,6 +16,7 @@ class Lienzo extends Component{
             </div>
             <div className="contenido-restaurante clearfix">
                <Platos />
+               <Bebidas />
                <Pedidos />  
             </div>
          </div>
