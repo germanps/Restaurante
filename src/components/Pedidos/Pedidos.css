@@ -1,0 +1,29 @@
+.pedidos-menu h3{
+   color: teal;
+   font-weight: bold;
+}
+.pedido{
+   display: flex;
+   align-content: center;
+   justify-content: flex-start;
+   padding: 1rem 0;
+   border-bottom: 1px solid teal;
+}
+.pedido-wrapper h4{
+   font-size: 2rem;
+	color: teal;
+}
+.pedido-wrapper{
+   width: 100%;
+}
+.pedido-precio-cantidad{
+   display: flex;
+   justify-content: flex-end;
+}
+.pedido-precio-cantidad span{
+   color: teal;
+   font-weight: bold;
+}
+.pedido-precio-cantidad .plato-precio{
+   padding-left: 2rem;
+}

@@ -1,61 +1,30 @@
-/* .ImagenPlatillo{
-	height: 80px;
-	width: 80px;
-	float: left;
-}
-.Platillo-Menu{
-	max-height: 500px;
-	overflow-y: auto;
-	overflow-x: hidden;
-}
-.Pedidos-Menu{
-	max-height: 600px;
-	overflow-y: auto;
-	overflow-x: hidden;
-}
-.TitlePlatillo{
-	margin-top: 0;
-	text-align: left;
-}
-.DescripcionPlatillo{
-	text-align: justify;
-}
-.PrecioPlatillo{
-	margin-left: 60px;
-}
-.EspacioPlatillo{
-	float: right;
-	margin-left: 10px;
-}
-.AlineacionBoton{
-	float: right;
-}
-.APrecioCantidad{
-	float: right;
-}
-.ListMargin{
-	margin-left: 20px;
-} */
-
 .plato-menu{
 	display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: flex-start;
 }
+.plato-menu > h3{
+	color: tomato;
+	font-weight: bold;
+}
 .plato{
 	display: flex;
     align-content: center;
 	justify-content: flex-start;
 	padding: 1rem 0;
-	border-bottom: 1px solid #d6d8d8;
+	border-bottom: 1px solid salmon;
+}
+.plato h4{
+	font-size: 2rem;
+	color: salmon;
 }
 .plato:last-child{
 	border-bottom: none;
 }
 .plato-img{
 	width: 80px;
-	height: 80px;
+	height: auto;
 }
 .plato-contenido{
 	display: flex;
@@ -64,4 +33,5 @@
     width: calc(100% - 80px);
     justify-content: center;
 	padding-left: 2rem;
+	color: coral;
 }

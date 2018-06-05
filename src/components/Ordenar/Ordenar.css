@@ -4,3 +4,35 @@
     align-items: center;
     justify-content: space-between;
 }
+.ordenar-inputs-cantidad label{
+    width: 100px;
+    font-size: 1.5rem;
+    color: salmon;
+}
+.ordenar-inputs-cantidad input[type="number"]{
+    width: 60px;
+    border: 2px solid salmon;
+    color: salmon;
+    padding-left: .5rem;
+    font-size: 1.5rem;
+    height: 25px;
+}
+.ordenar-inputs-cantidad input[type="number"]:focus{
+    outline: none;
+}
+.ordenar-inputs-cantidad input[type="number"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: salmon;
+}
+.ordenar-inputs-cantidad input[type="number"]::-moz-placeholder { /* Firefox 19+ */
+  color: salmon;
+}
+.ordenar-inputs-cantidad input[type="number"]:-ms-input-placeholder { /* IE 10+ */
+  color: salmon;
+}
+.ordenar-inputs-cantidad input[type="number"]:-moz-placeholder { /* Firefox 18- */
+  color: salmon;
+}
+.ordenar-inputs-precio{
+    font-size: 1.5rem;
+    color: tomato;
+}

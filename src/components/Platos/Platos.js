@@ -7,7 +7,7 @@ import Ordenar from './../Ordenar/Ordenar';
 class Platos extends Component {
     render(){
         let platos = [];
-        const llenarPlatos = VarTienda.platos.forEach((plato, index)=>{
+        /* const llenarPlatos =  */VarTienda.platos.forEach((plato, index)=>{
             platos.push(
                 <div className="plato" key={index}>
                     <img className="plato-img" role="presentation" src={logo} />  

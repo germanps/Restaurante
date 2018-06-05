@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 //import Vartienda from './../Tienda/Tienda';
+import './Pedidos.css';
 import VarTienda from '../../controller/Tienda';
 import { observer } from 'mobx-react';
 
@@ -7,8 +8,8 @@ import { observer } from 'mobx-react';
 class Pedidos extends Component{
     render(){
         let platosPedidos = [];
-        const llenarPlatosPedidos = VarTienda.platos.forEach((plato, index) => {
-            if(plato.cantidad != 0){
+        /* const llenarPlatosPedidos =  */VarTienda.platos.forEach((plato, index) => {
+            if(plato.cantidad > 0){
                 platosPedidos.push(
                     <div className="pedido" key={index}>
                         <div className="pedido-wrapper">
