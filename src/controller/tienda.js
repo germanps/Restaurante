@@ -33,7 +33,7 @@ class Tienda {
         this.platos.forEach((el, index) => {
             if(indicePlato === index){
                 //Si coinciden los indices actualizamos la cantidad
-                this.plato[index].cantidad = cantidadPlato;
+                this.platos[index].cantidad = cantidadPlato;
             }
         });
    }
