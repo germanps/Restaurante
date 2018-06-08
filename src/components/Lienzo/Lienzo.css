@@ -11,3 +11,36 @@
    font-size: 5rem;
    text-shadow: 2px 2px 5px #000;
 } 
+.contenido-restaurante .tab-container{
+   width: 100%;
+}
+.contenido-restaurante .tab-container .tab-list{
+   padding: 0;
+   list-style: none;
+   display: flex;
+   align-content: center;
+   width: 50%;
+   margin-bottom: 0;
+}
+.contenido-restaurante .tab-container .tab-list .tab-list-item{
+   
+}
+.contenido-restaurante .tab-container .tab-list .tab-list-item a{
+   display: flex;
+   padding: 1rem;
+   min-width: 100px;
+   justify-content: center;
+   font-size: 2rem;
+   color: tomato;
+}
+.contenido-restaurante .tab-container .tab-list .tab-list-item:last-child a{
+   margin-right: 0;
+}
+.contenido-restaurante .tab-container .tab-list .tab-list-item a.active{
+   border-bottom: 1px solid teal;
+}
+.contenido-restaurante .tab-container .tab-list .tab-list-item a:hover,
+.contenido-restaurante .tab-container .tab-list .tab-list-item a:focus{
+   text-decoration: none;
+   color: teal;
+}
