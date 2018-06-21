@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import './Bebidas.css';
-import logo from './../../logo.svg';
 import VarTienda from './../../controller/Tienda';
 import Ordenar from './../Ordenar/Ordenar';
 
 class Bebidas extends Component {
     render(){
         let bebidas = [];
-        /* const llenarPlatos =  */VarTienda.bebidas.forEach((bebida, index)=>{
+        VarTienda.bebidas.forEach((bebida, index)=>{
             bebidas.push(
                 <div className="bebida" key={index}>
-                    <img className="bebida-img" role="presentation" src={logo} />  
+                    <div className="bebida-imagen">
+                        <img className="bebida-img" role="presentation" src={bebida.direccion} />
+                    </div>
                     <div className="bebida-contenido">
                         <h4 className="bebida-title">{bebida.nombre}</h4>
                         <p className="bebida-descripcion">{bebida.descripcion}</p>

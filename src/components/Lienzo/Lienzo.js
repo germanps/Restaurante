@@ -45,7 +45,7 @@ class Lienzo extends Component{
                         
                         </div>
                         <div className="menu-wrapper">
-                            <Redirect from="/" to="/platos" />
+                            
                             <Route exact path="/platos"  component={Platos} />
                             <Route path="/bebidas" component={Bebidas} />
                         </div>

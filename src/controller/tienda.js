@@ -1,48 +1,30 @@
 import { extendObservable } from 'mobx';
+import datos from './firebaseController';
 
 class Tienda {
    constructor(){
-      extendObservable(this,
+       self = this;
+       datos.alimentos.once('value').then(function(snapshot){
+            snapshot.forEach(el => {
+                //const key = el.key;
+                const value = el.val(); 
+                self.platos.push(value);
+            });
+        });
+       datos.bebidas.once('value').then(function(snapshot){
+            snapshot.forEach(el => {
+                //const key = el.key;
+                const value = el.val(); 
+                self.bebidas.push(value);
+            });
+       });
+        extendObservable(this,
          {
             platos: [
-               {
-                  nombre: 'Patatas bravas',
-                  descripcion: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.',
-                  precio: 120,
-                  cantidad: 0
-               },
-               {
-                  nombre: 'Salchichas con tomate',
-                  descripcion: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.',
-                  precio: 220,
-                  cantidad: 0
-               },
-               {
-                  nombre: 'Arroz con conejo',
-                  descripcion: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.',
-                  precio: 320,
-                  cantidad: 0
-               }
+               
             ],
             bebidas: [
-                {
-                    nombre: 'Seven Up',
-                    descripcion: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.',
-                    precio: 20,
-                    cantidad: 0
-                },
-                {
-                    nombre: 'Cerveza',
-                    descripcion: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.',
-                    precio: 40,
-                    cantidad: 0
-                },
-                {
-                    nombre: 'Vino',
-                    descripcion: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.',
-                    precio: 55,
-                    cantidad: 0
-                }
+                
             ]
          }
       );
